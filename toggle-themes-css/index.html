@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-themes</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section>
+    <article class="post">
+      <h1>Toggle themes with CSS</h1>
+
+      <div class="content">
+        <p>Toggling themes using global variables and CSS is a common approach in modern web development to switch between light and dark modes or
+          other theme variations. </p>
+
+        <p>By defining theme variables in CSS, such as colors, fonts, and spacing, developers can easily manage and switch themes. A global variable,
+          often stored in JavaScript, tracks the current theme. When a user toggles the theme, JavaScript updates this variable and modifies the
+          document's root element class or data attribute.</p>
+        <p>
+          CSS then applies the corresponding styles based on the active theme, allowing for a seamless and dynamic user experience. This method
+          ensures maintainable and scalable theming across the application.
+        </p>
+      </div>
+
+      <div class="button-container">
+        <button type="button" class="theme-btn">Dark Theme</button>
+      </div>
+
+    </article>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

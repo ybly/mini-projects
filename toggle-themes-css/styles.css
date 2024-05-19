@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+  --button-bg-color: #424242;
+  --button-color: #e1e1ff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+  --button-bg-color: #fff;
+  --button-color: #292922;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+section {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 2rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 120px;
+  border-radius: 8px;
+  background-color: var(--button-bg-color);
+  color: var(--button-color);
+  font-weight: 600;
+}
+
+.post {
+  padding: 1rem;
+
+  .content {
+    line-height: 1.5em;
+  }
+
+}
