@@ -82,7 +82,7 @@
             audio.play();
         }
 
-        // loop through keys and a event listener to remove the playing class when the css transition has ended 
+        // loop through keys and add a event listener to remove the playing class when the css transition has ended 
         const keys = Array.from(document.querySelectorAll('.key'));
         keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
