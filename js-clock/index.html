@@ -16,11 +16,32 @@
     </div>
 
     <!-- Styles -->
-    <style></style>
+    <style>
+        
+    </style>
 
     <!-- Javascript -->
-    <script></script>
-    
+    <script>
+        const secondHand = document.querySelector('.second-hand');
+        const minsHand = document.querySelector('.min-hand');
+        const hourHand = document.querySelector('.hour-hand');
+
+        function setDate() {
+            const now = new Date();
+
+            const seconds = now.getSeconds();
+
+            const mins = now.getMinutes();
+
+            const hour = now.getHours();
+
+        }
+
+        setInterval(setDate, 1000);
+
+        setDate();
+    </script>
+
 </body>
 
 </html>
