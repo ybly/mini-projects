@@ -11,3 +11,4 @@ This collection features a variety of small, self-contained HTML, JavaScript, an
 - **[JS Fetch](https://ybly.github.io/mini-projects/js-fetch/)** - Use Fetch to retrieve data from API and filter results with regular expressions to display.
 - **[HTML Canvas](https://ybly.github.io/mini-projects/html-canvas/)** - Draw on HTML5 Canvas with mouse and touch events using HSL values.
 - **[JS Checkbox](https://ybly.github.io/mini-projects/js-checkbox/)** - JS checkbox interactions with shift key for selecting multiple checkboxes.
+- **[JS Scroll Events](https://ybly.github.io/mini-projects/js-scroll-events/)** - Add scroll events and transitions with css depending on scroll positions.
