@@ -8,3 +8,4 @@ This collection features a variety of small, self-contained HTML, JavaScript, an
 - **[JS + CSS Clock](https://ybly.github.io/mini-projects/js-clock/)** - Animate clock with CSS and JS using transform property.
 - **[CSS Variables](https://ybly.github.io/mini-projects/css-variables/)** - Using CSS variables and updating them with JavaScript.
 - **[CSS Flex Panels](https://ybly.github.io/mini-projects/css-flex-panels/)** - CSS Flexbox and transitions.
+- **[JS Fetch](https://ybly.github.io/mini-projects/css-flex-panels/)** - Use Fetch to retrieve data from API and filter results with regular expressions to display.
