@@ -9,3 +9,4 @@ This collection features a variety of small, self-contained HTML, JavaScript, an
 - **[CSS Variables](https://ybly.github.io/mini-projects/css-variables/)** - Using CSS variables and updating them with JavaScript.
 - **[CSS Flex Panels](https://ybly.github.io/mini-projects/css-flex-panels/)** - CSS Flexbox and transitions.
 - **[JS Fetch](https://ybly.github.io/mini-projects/js-fetch/)** - Use Fetch to retrieve data from API and filter results with regular expressions to display.
+- **[HTML Canvas](https://ybly.github.io/mini-projects/html-canvas/)** - Draw on HTML5 Canvas with mouse and touch events using HSL values.
