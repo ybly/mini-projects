@@ -35,4 +35,5 @@ function checkSlide() {
 	});
 }
 
+// Use debounce to control the time at which a function should be executed.
 window.addEventListener('scroll', debounce(checkSlide));
