@@ -3,7 +3,7 @@ This collection features a variety of small, self-contained HTML, JavaScript, an
 ## 🌱 Projects
 
 - **[CSS Toggle themes](https://ybly.github.io/mini-projects/css-toggle-themes/)** - A simple interactive CSS project on how to implement a light/dark theme toggle using global variables.
-- **[Todo App](https://ybly.github.io/mini-projects/todo-app/)** - A basic todo app written in vanilla JS and data persistence using local storage.
+- **[JS Todo App](https://ybly.github.io/mini-projects/js-todo-app/)** - A basic todo app with data persistence using local storage.
 - **[JS Drum Kit](https://ybly.github.io/mini-projects/js-drum-kit/)** - Play audio and animate frontend based on keyboard input and associated keyCodes using "data-" attribute values.
 - **[JS Clock](https://ybly.github.io/mini-projects/js-clock/)** - Animate clock with CSS and JS using transform property.
 - **[CSS Variables](https://ybly.github.io/mini-projects/css-variables/)** - Using CSS variables and updating them with JavaScript.
