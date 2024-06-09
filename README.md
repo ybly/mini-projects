@@ -9,7 +9,7 @@ This collection features a variety of small, self-contained HTML, JavaScript, an
 - **[CSS Variables](https://ybly.github.io/mini-projects/css-variables/)** - Using CSS variables and updating them with JavaScript.
 - **[CSS Flex Panels](https://ybly.github.io/mini-projects/css-flex-panels/)** - CSS Flexbox and transitions.
 - **[JS Fetch](https://ybly.github.io/mini-projects/js-fetch/)** - Use Fetch to retrieve data from API and filter results with regular expressions to display.
-- **[HTML Canvas](https://ybly.github.io/mini-projects/html-canvas/)** - Draw on HTML5 Canvas with mouse and touch events using HSL values.
-- **[JS Checkbox](https://ybly.github.io/mini-projects/js-checkbox/)** - JS checkbox interactions with shift key for selecting multiple checkboxes.
-- **[JS Scroll Events](https://ybly.github.io/mini-projects/js-scroll-events/)** - Add scroll events and transitions with css depending on scroll position and Use debounce to control the time at which scroll event should be executed.
-- **[JS Fixed Nav](https://ybly.github.io/mini-projects/js-fixed-nav/)** - Apply sticky nav functionality using scroll position.
+- **[HTML Canvas](https://ybly.github.io/mini-projects/html-canvas/)** - Draw on HTML5 canvas with mouse and touch events using HSL values.
+- **[JS Checkbox](https://ybly.github.io/mini-projects/js-checkbox/)** - Checkbox interactions with shift key for selecting multiple checkboxes.
+- **[JS Scroll Events](https://ybly.github.io/mini-projects/js-scroll-events/)** - Scroll events and transitions with css depending on scroll position, using debounce to control the time at which scroll event should be executed.
+- **[JS Fixed Nav](https://ybly.github.io/mini-projects/js-fixed-nav/)** - Sticky navigation functionality using scroll position and CSS.
