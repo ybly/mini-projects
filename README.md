@@ -12,3 +12,4 @@ This collection features a variety of small, self-contained HTML, JavaScript, an
 - **[HTML Canvas](https://ybly.github.io/mini-projects/html-canvas/)** - Draw on HTML5 Canvas with mouse and touch events using HSL values.
 - **[JS Checkbox](https://ybly.github.io/mini-projects/js-checkbox/)** - JS checkbox interactions with shift key for selecting multiple checkboxes.
 - **[JS Scroll Events](https://ybly.github.io/mini-projects/js-scroll-events/)** - Add scroll events and transitions with css depending on scroll position and Use debounce to control the time at which scroll event should be executed.
+- **[JS Fixed Nav](https://ybly.github.io/mini-projects/js-fixed-nav/)** - Apply sticky nav functionality using scroll position.
