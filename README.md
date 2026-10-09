@@ -13,3 +13,4 @@ This collection features a variety of small, self-contained HTML, JavaScript, an
 - **[JS Checkbox](https://ybly.github.io/mini-projects/js-checkbox/)** - Checkbox interactions with shift key for selecting multiple checkboxes.
 - **[JS Scroll Events](https://ybly.github.io/mini-projects/js-scroll-events/)** - Scroll events and transitions with css depending on scroll position, using debounce to control the time at which scroll event should be executed.
 - **[JS Fixed Nav](https://ybly.github.io/mini-projects/js-sticky-nav/)** - Sticky navigation functionality using scroll position and CSS.
+- **[JS Card Swipe](https://ybly.github.io/mini-projects/js-card-swipe/)** - Simple responsive card swipe component styled with tailwind CSS.
