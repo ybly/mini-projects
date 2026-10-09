@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card Stack Swiper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="gradient-bg min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="max-w-lg w-full">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-white mb-2">3D Card Stack</h1>
+            <p class="text-white/80">Click or swipe to navigate through the cards</p>
+
+            <!-- Progress Indicator -->
+            <div class="flex justify-center mt-6 space-x-3">
+                <div class="progress-dot w-3 h-3 rounded-full bg-white/30" data-index="0"></div>
+                <div class="progress-dot w-3 h-3 rounded-full bg-white/30" data-index="1"></div>
+                <div class="progress-dot w-3 h-3 rounded-full bg-white/30" data-index="2"></div>
+                <div class="progress-dot w-3 h-3 rounded-full bg-white/30" data-index="3"></div>
+                <div class="progress-dot w-3 h-3 rounded-full bg-white/30" data-index="4"></div>
+                <div class="progress-dot w-3 h-3 rounded-full bg-white/30" data-index="5"></div>
+            </div>
+        </div>
+
+        <!-- Card Stack Container -->
+        <div class="card-stack mb-8">
+            <!-- Card 1 -->
+            <div class="card active bounce-in card-gradient-1" data-index="0">
+                <div class="card-front text-white flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Featured</span>
+                        <button class="flip-btn bg-white/20 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <div class="floating mb-6">
+                            <i class="fas fa-globe-americas text-6xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2 text-center">Travel Explorer</h2>
+                        <p class="text-center text-white/80">Discover amazing destinations around the world with our travel guides.</p>
+                    </div>
+
+                    <div class="mt-4 flex justify-between">
+                        <button class="swipe-left-btn bg-white/20 px-4 py-2 rounded-full flex items-center">
+                            <i class="fas fa-arrow-left mr-2"></i> Previous
+                        </button>
+                        <button class="swipe-right-btn bg-white/20 px-4 py-2 rounded-full flex items-center">
+                            Next <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-back text-white bg-blue-800/90 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Details</span>
+                        <button class="flip-btn bg-white/20 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-undo"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold mb-4">Travel Features</h2>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Interactive maps</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Local experiences</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Travel itineraries</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card next card-gradient-2" data-index="1">
+                <div class="card-front text-white flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">New</span>
+                        <button class="flip-btn bg-white/20 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <div class="floating mb-6">
+                            <i class="fas fa-music text-6xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2 text-center">Music Experience</h2>
+                        <p class="text-center text-white/80">Immerse yourself in high-quality audio with our premium music service.</p>
+                    </div>
+
+                    <div class="mt-4 flex justify-between">
+                        <button class="swipe-left-btn bg-white/20 px-4 py-2 rounded-full flex items-center">
+                            <i class="fas fa-arrow-left mr-2"></i> Previous
+                        </button>
+                        <button class="swipe-right-btn bg-white/20 px-4 py-2 rounded-full flex items-center">
+                            Next <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-back text-white bg-blue-800/90 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Features</span>
+                        <button class="flip-btn bg-white/20 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-undo"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold mb-4">What's Included</h2>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Lossless audio quality</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Curated playlists</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Offline listening</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card next-2 card-gradient-3" data-index="2">
+                <div class="card-front text-white flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Popular</span>
+                        <button class="flip-btn bg-white/20 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <div class="floating mb-6">
+                            <i class="fas fa-utensils text-6xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2 text-center">Culinary Journey</h2>
+                        <p class="text-center text-white/80">Explore world cuisines with step-by-step recipes from master chefs.</p>
+                    </div>
+
+                    <div class="mt-4 flex justify-between">
+                        <button class="swipe-left-btn bg-white/20 px-4 py-2 rounded-full flex items-center">
+                            <i class="fas fa-arrow-left mr-2"></i> Previous
+                        </button>
+                        <button class="swipe-right-btn bg-white/20 px-4 py-2 rounded-full flex items-center">
+                            Next <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-back text-white bg-blue-800/90 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Recipes</span>
+                        <button class="flip-btn bg-white/20 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-undo"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold mb-4">What You Get</h2>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>1000+ recipes</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Video tutorials</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Grocery list generator</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card next-3 card-gradient-4" data-index="3">
+                <div class="card-front text-white flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Trending</span>
+                        <button class="flip-btn bg-white/20 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <div class="floating mb-6">
+                            <i class="fas fa-hiking text-6xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2 text-center">Adventure Awaits</h2>
+                        <p class="text-center text-white/80">Find and book unique outdoor experiences with expert guides.</p>
+                    </div>
+
+                    <div class="mt-4 flex justify-between">
+                        <button class="swipe-left-btn bg-white/20 px-4 py-2 rounded-full flex items-center">
+                            <i class="fas fa-arrow-left mr-2"></i> Previous
+                        </button>
+                        <button class="swipe-right-btn bg-white/20 px-4 py-2 rounded-full flex items-center">
+                            Next <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-back text-white bg-blue-800/90 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Activities</span>
+                        <button class="flip-btn bg-white/20 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-undo"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold mb-4">Adventure Types</h2>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Mountain hiking</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Water sports</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Wildlife safaris</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card hidden card-gradient-5" data-index="4">
+                <div class="card-front text-gray-800 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-black/10 px-3 py-1 rounded-full text-sm">Learning</span>
+                        <button class="flip-btn bg-black/10 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <div class="floating mb-6">
+                            <i class="fas fa-graduation-cap text-6xl text-purple-500"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2 text-center">Skill Mastery</h2>
+                        <p class="text-center text-gray-600">Learn new skills with our interactive courses and expert instructors.</p>
+                    </div>
+
+                    <div class="mt-4 flex justify-between">
+                        <button class="swipe-left-btn bg-black/10 px-4 py-2 rounded-full flex items-center">
+                            <i class="fas fa-arrow-left mr-2"></i> Previous
+                        </button>
+                        <button class="swipe-right-btn bg-purple-500 text-white px-4 py-2 rounded-full flex items-center">
+                            Next <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-back text-white bg-blue-800/90 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Courses</span>
+                        <button class="flip-btn bg-white/20 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-undo"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold mb-4">Learning Paths</h2>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Web development</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Data science</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Digital marketing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card hidden card-gradient-6" data-index="5">
+                <div class="card-front text-gray-800 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-black/10 px-3 py-1 rounded-full text-sm">Final</span>
+                        <button class="flip-btn bg-black/10 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <div class="floating mb-6">
+                            <i class="fas fa-gem text-6xl text-purple-500"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-2 text-center">Premium Access</h2>
+                        <p class="text-center text-gray-600">Unlock all features with our premium membership plan.</p>
+                    </div>
+
+                    <div class="mt-4 flex justify-between">
+                        <button class="swipe-left-btn bg-black/10 px-4 py-2 rounded-full flex items-center">
+                            <i class="fas fa-arrow-left mr-2"></i> Previous
+                        </button>
+                        <button class="swipe-right-btn bg-purple-500 text-white px-4 py-2 rounded-full flex items-center pulse">
+                            Upgrade <i class="fas fa-crown ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-back text-white bg-blue-800/90 flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Benefits</span>
+                        <button class="flip-btn bg-white/20 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-undo"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-1 flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold mb-4">Premium Features</h2>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Ad-free experience</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Exclusive content</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-3 text-green-300"></i>
+                                <span>Priority support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="flex justify-center space-x-6 mb-8">
+            <button id="prev-btn"
+                class="bg-white/20 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-white/30 transition-all duration-300">
+                <i class="fas fa-chevron-left text-xl"></i>
+            </button>
+            <button id="flip-btn"
+                class="bg-white/20 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-white/30 transition-all duration-300">
+                <i class="fas fa-sync-alt text-xl"></i>
+            </button>
+            <button id="next-btn"
+                class="bg-white/20 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-white/30 transition-all duration-300 swipe-hint">
+                <i class="fas fa-chevron-right text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Instructions -->
+        <div class="text-center text-white/70 text-sm">
+            <p><i class="fas fa-mouse-pointer mr-2"></i> Click buttons or swipe to navigate</p>
+            <p><i class="fas fa-sync-alt mr-2"></i> Click the flip icon to see card details</p>
+            <p><i class="fas fa-layer-group mr-2"></i> See cards behind the active one</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.card');
+            const progressDots = document.querySelectorAll('.progress-dot');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const flipBtn = document.getElementById('flip-btn');
+            let currentIndex = 0;
+            let startX = 0;
+            let currentX = 0;
+            let isDragging = false;
+
+            // Initialize cards
+            updateCards();
+
+            // Next card function
+            function nextCard() {
+                if (currentIndex < cards.length - 1) {
+                    // Add swipe animation to current card
+                    cards[currentIndex].classList.add('swipe-left');
+
+                    setTimeout(() => {
+                        currentIndex++;
+                        updateCards();
+                    }, 400);
+                }
+            }
+
+            // Previous card function
+            function prevCard() {
+                if (currentIndex > 0) {
+                    // Add swipe animation to current card
+                    cards[currentIndex].classList.add('swipe-right');
+
+                    setTimeout(() => {
+                        currentIndex--;
+                        updateCards();
+                    }, 400);
+                }
+            }
+
+            // Update card positions and progress
+            function updateCards() {
+                cards.forEach((card, index) => {
+                    card.classList.remove('active', 'next', 'next-2', 'next-3', 'previous', 'previous-2', 'previous-3', 'hidden', 'swipe-left', 'swipe-right');
+
+                    if (index === currentIndex) {
+                        card.classList.add('active');
+                    } else if (index === currentIndex + 1) {
+                        card.classList.add('next');
+                    } else if (index === currentIndex + 2) {
+                        card.classList.add('next-2');
+                    } else if (index === currentIndex + 3) {
+                        card.classList.add('next-3');
+                    } else if (index === currentIndex - 1) {
+                        card.classList.add('previous');
+                    } else if (index === currentIndex - 2) {
+                        card.classList.add('previous-2');
+                    } else if (index === currentIndex - 3) {
+                        card.classList.add('previous-3');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+
+                // Update progress indicators
+                progressDots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.add('active', 'bg-white');
+                        dot.classList.remove('bg-white/30');
+                    } else {
+                        dot.classList.remove('active', 'bg-white');
+                        dot.classList.add('bg-white/30');
+                    }
+                });
+
+                // Update button states
+                prevBtn.disabled = currentIndex === 0;
+                nextBtn.disabled = currentIndex === cards.length - 1;
+
+                if (prevBtn.disabled) {
+                    prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                } else {
+                    prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                }
+
+                if (nextBtn.disabled) {
+                    nextBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                } else {
+                    nextBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                }
+            }
+
+            // Flip current card
+            function flipCurrentCard() {
+                cards[currentIndex].classList.toggle('flipped');
+            }
+
+            // Event listeners for navigation buttons
+            prevBtn.addEventListener('click', prevCard);
+            nextBtn.addEventListener('click', nextCard);
+            flipBtn.addEventListener('click', flipCurrentCard);
+
+            // Event listeners for card buttons
+            cards.forEach(card => {
+                const flipBtn = card.querySelector('.flip-btn');
+                const swipeLeftBtn = card.querySelector('.swipe-left-btn');
+                const swipeRightBtn = card.querySelector('.swipe-right-btn');
+
+                flipBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    card.classList.toggle('flipped');
+                });
+
+                swipeLeftBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (card.classList.contains('active')) {
+                        prevCard();
+                    }
+                });
+
+                swipeRightBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (card.classList.contains('active')) {
+                        nextCard();
+                    }
+                });
+            });
+
+            // Click on card to navigate (if it's not active)
+            cards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    // Only navigate if the card is not active and not flipped
+                    if (!card.classList.contains('active') && !card.classList.contains('flipped')) {
+                        const index = parseInt(card.getAttribute('data-index'));
+                        currentIndex = index;
+                        updateCards();
+                    }
+                });
+            });
+
+            // Touch events for mobile swipe
+            const cardStack = document.querySelector('.card-stack');
+
+            cardStack.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                isDragging = true;
+            });
+
+            cardStack.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+
+                currentX = e.touches[0].clientX;
+                const diff = currentX - startX;
+
+                // Apply transform to active card during drag
+                if (cards[currentIndex]) {
+                    cards[currentIndex].style.transform = `translateX(${diff}px) rotateZ(${diff * 0.1}deg)`;
+                }
+            });
+
+            cardStack.addEventListener('touchend', () => {
+                if (!isDragging) return;
+
+                isDragging = false;
+
+                // Reset card transform
+                if (cards[currentIndex]) {
+                    cards[currentIndex].style.transform = '';
+                }
+
+                const diff = currentX - startX;
+                const swipeThreshold = 50;
+
+                if (Math.abs(diff) > swipeThreshold) {
+                    if (diff > 0) {
+                        // Swipe right - go to previous card
+                        prevCard();
+                    } else {
+                        // Swipe left - go to next card
+                        nextCard();
+                    }
+                }
+            });
+
+            // Mouse events for desktop drag
+            cardStack.addEventListener('mousedown', (e) => {
+                startX = e.clientX;
+                isDragging = true;
+                cardStack.style.cursor = 'grabbing';
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+
+                currentX = e.clientX;
+                const diff = currentX - startX;
+
+                // Apply transform to active card during drag
+                if (cards[currentIndex]) {
+                    cards[currentIndex].style.transform = `translateX(${diff}px) rotateZ(${diff * 0.1}deg)`;
+                }
+            });
+
+            document.addEventListener('mouseup', () => {
+                if (!isDragging) return;
+
+                isDragging = false;
+                cardStack.style.cursor = '';
+
+                // Reset card transform
+                if (cards[currentIndex]) {
+                    cards[currentIndex].style.transform = '';
+                }
+
+                const diff = currentX - startX;
+                const swipeThreshold = 50;
+
+                if (Math.abs(diff) > swipeThreshold) {
+                    if (diff > 0) {
+                        // Swipe right - go to previous card
+                        prevCard();
+                    } else {
+                        // Swipe left - go to next card
+                        nextCard();
+                    }
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    prevCard();
+                } else if (e.key === 'ArrowRight') {
+                    nextCard();
+                } else if (e.key === ' ' || e.key === 'Spacebar') {
+                    e.preventDefault();
+                    flipCurrentCard();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
